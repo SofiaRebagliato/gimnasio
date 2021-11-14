@@ -123,3 +123,170 @@ p {
 h3 {
     margin: 0;
 }
+
+
+/* CSS Miguel Ángel */
+
+.form-wrapper {
+    background-color: #2a2a2a;
+    width:100%;
+    background-image: url("../media/form-background-01.jpg");
+    min-height: 900px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.container-form {
+    margin:0 auto;
+    width: 1200px; 
+}
+
+.formulario {
+    background-color: #fff;
+    width: 400px;
+    height:780px;    
+    padding: 30px 50px; 
+}
+
+form {
+    padding-top: 10px;
+}
+
+input, textarea {
+    margin-top: 40px;;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #848181;
+    width: 95%;
+    font-size: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 1rem;
+    color: #afacac;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+textarea {
+    resize: none;
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    width:5%;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #fcce1b;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.map-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color:#2a2a2a;
+    width: 100%;
+    min-height: 180px;
+    padding: 50px 0;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;    
+}
+
+.footer-wrapper div {
+    float: left;
+    color: #fff;
+}
+
+.footer-sup, .footer-inf {
+    clear:both;
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.logo-gym, .menu-footer {
+    height: 150px;
+}
+
+.logo-gym {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-gym img {
+    width: 200px;
+}
+
+.menu-footer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0;
+    padding-left: 40px;
+}
+
+footer ul li a, footer ul li a:focus, footer ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-inf {
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+.rights, .policy {
+    height:50px;    
+}
+
+.rights {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.policy {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
