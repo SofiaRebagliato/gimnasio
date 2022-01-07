@@ -1,0 +1,825 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    /*text-align: justify;*/
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper {
+    width: 1200px;
+    margin: auto;
+    display:inline-flex;
+}
+
+header {
+    background-color: #2a2a2a;
+    height: 60px;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    width: 15%;    
+    display: flex;
+    justify-content: start; 
+}
+
+.logo-header img {
+    width: 80px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: end;    
+    align-items: center;
+}
+
+.menu ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.menu ul a {
+	display:block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+    padding-left: 10px;
+}
+
+.menu ul ul {
+	display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;    
+}
+
+.menu ul ul li {
+	float:none;
+	width:150px;
+    background-color: #fcce1b;
+    padding: 10px 15px;
+    z-index: 1;
+}
+
+.menu ul ul li:hover {
+    background-color: #2a2a2a;
+}
+
+.menu ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+    color: black;
+}
+
+.menu ul ul li:hover a {
+    color: #fff;
+}
+
+.menu ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
+
+.menu ul li:hover > ul {
+	display:block;
+}
+
+section {
+    overflow: hidden;
+}
+
+.submenu::after {
+    content: "▾";
+    padding-left: 3px;
+}
+
+.banner {
+    width: 100%;
+    background-image: url("../media/banner-home.jpg");
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-wrapper {
+    width:1200px;
+    height: 300px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.banner-wrapper p {
+    width: 600px;
+    padding-bottom: 30px;
+    color: #fff;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    font-weight: 900;
+}
+
+.banner-inf {
+    width: 100%;
+    height: 150px;
+    background-color: #2a2a2a;
+    opacity: 0.8;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+}
+
+.banner-inf-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-inf-col {
+    height: 100px;
+    width: 33%;
+}
+
+.banner-inf-text-wrapper {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.banner-inf-text {
+    width: 29%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fcce1b;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px rgba(5, 5, 5);
+    margin: 0;
+}
+
+.second-text {
+    margin: 0;
+    color: #fcce1b;
+    max-width: 300px;
+    text-align: left;
+}
+
+h3 {
+    margin: 0;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.numbers {
+    color: #fcce1b;
+    font-size: 30px;
+}
+
+.btn.primary {
+    border-radius: 7px;
+    background: linear-gradient(180deg, #d6ac17 0%, #fcce1b 100%);
+    padding: 10px;
+    border: 1px solid transparent;
+    width: 150px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2a2a2a;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn.primary:hover {
+    background: linear-gradient(180deg, #fcd858 0%, #fcce1b 100%);
+}
+
+.about-us {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-left, 
+.about-right {
+     height: 500px;
+}
+
+.about-left {
+    width: 40%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-left p {
+    padding-bottom: 20px;
+}
+
+.about-right {
+    width: 50%;
+    background-image: url("../media/sala.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px 3px #999;
+    border-radius: 15px;
+}
+
+.about-right img {
+    width: 300px;
+}
+
+.our-prices-wrapper {
+    background-image: url("../media/our-prices-wrapper.jpg");
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.our-prices-wrapper .text-our-prices {
+    width: 600px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+}
+
+.our-prices-wrapper::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background-color:rgb(42, 42, 42, 0.8);
+    position: absolute;
+    z-index: 1;
+}
+
+.our-prices-wrapper.prices-page {
+    background-image: none;
+}
+
+.our-prices-wrapper.prices-page::before {
+    display: none;
+}
+
+.our-prices-wrapper.prices-page .title-our-prices {
+    margin-top: 0;
+    color: #000000;
+}
+
+.our-prices-wrapper.prices-page .text-our-prices {
+    color: #000000;
+}
+
+.title-our-prices {
+    color: white;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.prices-plan-wrapper {
+    display: flex;
+    width: 900px;
+    margin: 40px auto;
+}
+
+.prices-plan {
+    position: relative;
+    z-index: 2;
+    width: 33%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prices-plan ul {
+    list-style: none;
+}
+
+.plan-name {
+    background-color: #fcce1b;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.plan-border {
+    border: 5px solid black;
+}
+
+.text-plan {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.text-category {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.container {
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+.container ul {
+    padding-left: 0;
+    width: 80%;
+    margin: 15px auto 50px;
+    
+}
+
+.container ul li {
+    font-size: 11px;
+    text-align: left;
+    padding: 15px 14px 15px 40px;
+    position: relative;
+}
+
+.container ul li.odd {
+    background-color: rgb(236, 241, 243);
+}
+
+.price {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    padding: 5px 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container .fas {
+    position: absolute;
+    left: 15px;
+    font-size: 15px;
+}
+
+.fas.fa-check {
+    color: green;    
+}
+
+.fas.fa-times {
+    color: red;
+}
+
+.container .btn.primary {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-wrapper {
+    margin: 100px 0;
+}
+
+.login-wrapper p {
+    text-align: center;
+}
+
+.title-login {
+    text-align: center;
+}
+
+.text-login {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    display: flex;
+    margin: 20px auto 0;
+    max-width: 900px;
+}
+
+.images {
+    width: 33%;
+    position: relative;
+    height: 100%;
+    min-height: 300px;
+    margin: 0 15px;
+}
+
+.images .btn.primary {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.first-image {
+    background-image: url("../media/sala.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second-image {
+    background-image: url("../media/Spinning.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.third-image {
+    background-image: url("../media/equipo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-wrapper {
+    background-color: #2a2a2a;
+    width:100%;
+    background-image: url("../media/form-background-01.png");
+    min-height: 1000px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.container-form {
+    margin:0 auto;
+    width: 1200px; 
+}
+
+.formulario {
+    background-color: #fff;
+    width: 400px;
+    height:780px;    
+    padding: 30px 50px 80px; 
+}
+
+form {
+    padding-top: 10px;
+}
+
+input, textarea {
+    margin-top: 40px;;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #848181;
+    width: 95%;
+    font-size: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 1rem;
+    color: #afacac;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+textarea {
+    resize: none;
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    width:5%;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="submit"].btn.primary {
+    width: 250px;
+}
+
+.map-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.map-wrapper p {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color:#2a2a2a;
+    width: 100%;
+    min-height: 180px;
+    padding: 50px 0;
+}
+
+
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;    
+}
+
+.footer-wrapper div {
+    float: left;
+    color: #fff;
+}
+
+.footer-sup, .footer-inf {
+    clear:both;
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.logo-footer, .menu-footer {
+    height: 150px;
+}
+
+.logo-footer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 200px;
+}
+
+.menu-footer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0;
+    padding-left: 40px;
+}
+
+footer ul li a, footer ul li a:focus, footer ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-inf {
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+.rights, .policy {
+    height:50px;    
+}
+
+.rights {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.policy {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.timetable {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.timetable-week {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.timetable-week div {
+    width: 16.67%;
+    margin: 0 1px;
+    padding: 15px 0;
+    text-align: center;
+    color: #fcce1b;
+    background-color: #2a2a2a;
+}
+
+.timetable-week div:first-child {
+    background-color: transparent;
+}
+
+.timetable-activities {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1px;
+}
+
+.timetable-activities div {
+    width: 16.67%;
+    margin: 0 1px;
+    padding: 15px 0;
+    text-align: center;
+    color: #2a2a2a;
+    background-color: #fcce1b;
+}
+
+.timetable-activities div.schedule {
+    color: #fcce1b;
+    background-color: #2a2a2a;
+}
+
+.activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.activity {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.activity img {
+    width: 90%;
+}
+
+.activity a {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 15px;
+    color: #fcce1b;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.activity-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.aerobic-wrapper .activity-left,
+.rutinas-wrapper .activity-left,
+.gluteos-wrapper .activity-left {
+    order: 2;
+}
+
+.activity-left, 
+.activity-right {
+     height: 500px;
+}
+
+.activity-left {
+    width: 40%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.activity-left p {
+    padding-bottom: 20px;
+}
+
+.activity-right {
+    width: 50%;
+    background-image: url("../media/sala.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px 3px #999;
+    border-radius: 15px;
+}
+
+.activity-right img {
+    width: 300px;
+}
+
+.facilities-wrapper {
+    height: 600px;
+    position: relative;
+    background-image: url('../media/equipo.jpg');
+}
+
+.facilities-wrapper::before {
+    background-color: #fcce1b;
+    opacity: 0.8;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.facilities-info {
+    padding: 0 50px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+
+.facilities-info a {
+    color: #fcce1b;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    max-width: 250px;
+    margin: 50px auto 0;
+    font-weight: bold;
+}
+
+.ciclo-indoor-wrapper .activity-right {
+    background-image: url('../media/ciclo-indoor.jpg');
+}
+
+.gluteos-wrapper .activity-right {
+    background-image: url('../media/gluteos-express.jpg');
+}
+
+.funcional-wrapper .activity-right {
+    background-image: url('../media/entrenam-funcional.jpg');
+}
+
+.rutinas-wrapper .activity-right {
+    background-image: url('../media/plan-experto-min.jpg');
+}
+
+.zumba-wrapper .activity-right {
+    background-image: url('../media/zumba.jpg');
+}
+
+.aerobic-wrapper .activity-right {
+    background-image: url('../media/aerobic.jpg');
+}

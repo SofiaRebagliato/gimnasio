@@ -1,0 +1,79 @@
+
+.about-prices {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.about-prices-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #2a2a2a;
+}
+
+.about-prices-wrapper:nth-child(even) {
+    background-color: #fcce1b;
+}
+
+.about-prices-wrapper:nth-child(even) .image-wrapper {
+    order: 2;
+}
+
+.text-wrapper, 
+.image-wrapper {
+     height: 500px;
+}
+
+.text-wrapper {
+    width: 40%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-prices-wrapper:nth-child(even) .text-wrapper h2,
+.about-prices-wrapper:nth-child(even) .text-wrapper p {
+    color: #2a2a2a;
+}
+
+.about-prices-wrapper:nth-child(even) .text-wrapper .btn.primary {
+    color: #fcce1b;
+    background: #2a2a2a;
+}
+
+.text-wrapper h2 {
+    color: #fcce1b;
+}
+
+.text-wrapper p {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.img-1 {
+    background-image: url("../media/equipo.jpg");
+}
+
+.img-2 {
+    background-image: url("../media/plan-medio-min.jpg");
+}
+
+.img-3 {
+    background-image: url("../media/plan-experto-min.jpg");
+}
+
+.image-wrapper {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+
+.image-wrapper img {
+    width: 300px;
+}
