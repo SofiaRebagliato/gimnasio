@@ -9,10 +9,7 @@ body {
 p {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-=======
     padding-bottom: 20px;
->>>>>>> master
 }
 
 .header-wrapper {
@@ -138,8 +135,6 @@ section {
     position: relative;
 }
 
-<<<<<<< HEAD
-=======
 .banner-interior {
     width: 100%;
     background-image: url("../media/banner-home.jpg");
@@ -147,7 +142,6 @@ section {
     background-size: cover;
     position: relative;
 }
->>>>>>> master
 .banner-wrapper {
     width:1200px;
     height: 300px;
@@ -246,8 +240,6 @@ h3 {
     background: linear-gradient(180deg, #fcd858 0%, #fcce1b 100%);
 }
 
-<<<<<<< HEAD
-=======
 .btn-black {
     border-radius: 7px;
     background: #000;
@@ -265,7 +257,6 @@ h3 {
     color: #000;
 }
 
->>>>>>> master
 .about-us {
     width: 100%;
     height: 700px;
@@ -279,20 +270,11 @@ h3 {
     display: flex;
 }
 
-<<<<<<< HEAD
-.about-left, 
-.about-right {
-     height: 500px;
-}
-
-.about-left {
-=======
 .about-us .about-left, .about-us .about-right {
      height: 500px;
 }
 
 .about-us .about-left {
->>>>>>> master
     width: 40%;
     padding-right: 10%;
     display: flex;
@@ -300,19 +282,11 @@ h3 {
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-.about-left p {
-    padding-bottom: 20px;
-}
-
-.about-right {
-=======
 .about-us .about-left p {
     padding-bottom: 20px;
 }
 
 .about-us .about-right {
->>>>>>> master
     width: 50%;
     background-image: url("../media/sala.jpg");
     background-size: cover;
@@ -321,11 +295,7 @@ h3 {
     border-radius: 15px;
 }
 
-<<<<<<< HEAD
-.about-right img {
-=======
 .about-us .about-right img {
->>>>>>> master
     width: 300px;
 }
 
@@ -357,7 +327,6 @@ h3 {
     z-index: 1;
 }
 
-<<<<<<< HEAD
 .our-prices-wrapper.prices-page {
     background-image: none;
 }
@@ -375,8 +344,6 @@ h3 {
     color: #000000;
 }
 
-=======
->>>>>>> master
 .title-our-prices {
     color: white;
     z-index: 2;
@@ -548,11 +515,7 @@ h3 {
     background-color: #2a2a2a;
     width:100%;
     background-image: url("../media/form-background-01.png");
-<<<<<<< HEAD
-    min-height: 1000px;
-=======
     min-height: 900px;
->>>>>>> master
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;   
@@ -569,23 +532,6 @@ h3 {
 .formulario {
     background-color: #fff;
     width: 400px;
-<<<<<<< HEAD
-    height:780px;    
-    padding: 30px 50px 80px; 
-}
-
-form {
-    padding-top: 10px;
-}
-
-input, textarea {
-    margin-top: 40px;;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid #848181;
-    width: 95%;
-    font-size: 1rem;
-=======
     height:670px;    
     padding: 30px 50px 80px; 
 }
@@ -597,15 +543,10 @@ input, textarea {
     border-bottom: 1px solid #848181;
     width: 95%;
     font-size: 1rem;    
->>>>>>> master
     color: black;
     font-family: Verdana, Geneva, sans-serif;
 }
 
-<<<<<<< HEAD
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    font-size: 1rem;
-=======
 input:focus, textarea:focus {
     outline: none;
 }
@@ -614,7 +555,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-size: 0.9rem;
     font-weight: 200;
     font-style: italic;
->>>>>>> master
     color: #afacac;
     font-family: Verdana, Geneva, sans-serif;
 }
@@ -735,7 +675,6 @@ footer ul li a:hover {
     flex-direction: row-reverse;
 }
 
-<<<<<<< HEAD
 .timetable {
     max-width: 1200px;
     margin: 0 auto 50px;
@@ -910,7 +849,6 @@ footer ul li a:hover {
 .aerobic-wrapper .activity-right {
     background-image: url('../media/aerobic.jpg');
 }
-=======
 
 
 
@@ -1267,4 +1205,3 @@ ul.social-media-links img:hover {
 }
 
 
->>>>>>> master
